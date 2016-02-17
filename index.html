@@ -4,38 +4,124 @@
 		<meta charset="utf-8"/>
 		<title>Thomas Cardenas</title> <!-- What will be displayed in the tab -->
 		
-		<!-- Link to the stylesheet -->
-		<link rel="stylesheet" href="main.css"></link>
+		<!-- CSS
+		================================================== -->
+		<link rel="stylesheet" href="css/main.css"></link>
 	</head>
+	
+	<body>
 	
 	<!-- Header
    ================================================== -->
-	<body>
-		<header>
-			<h1>I'm Thomas Cardenas</h1>
-		</header>
+	<header id = "home">
 		
-		<nav>
-			<ul>
-				<li>Home</li>
-				<li>About</li>
-				<li>Education</li>
-				<li>Skills</li>
-				<li>Contact</li>
-			</ul>
-		</nav>
+		<!-- Navigation bar that will stay at the top of the page -->
+		<div id="nav-bar">
+			<nav>
+				<ul> <!--Link the nav bar to all the different sectiosn of the page-->
+					<li href="#home">>Home</li>
+					<li href="#about">>About</li>
+					<li href="#education">>Education</li>
+					<li href="#work">>Work</li>
+					<li href="#skills">>Skills</li>
+					<li href="#contact">>Contact</li>
+				</ul>
+			</nav>
+		</div>
 		
-		<!-- About Section
-		================================================== -->
-		<section>
+		<!--Quick summary about me-->
+		<div>
+			<h1>I'm Thomas Cardenas.</h1>	
+			<h3>I am based in the Charlotte, North Carolina area.  A student working towards becoming a <span>software engineer</span> to create software and software for devices.
+			Let's start scrolling and learn more <span>about</span> me.</h3>
+			
+		</div>
+	 </header>
 
-		</section>
+	<!-- About Section
+	================================================== -->
+	<section id="about">
+
+		<div class="row">
+
+			<div class="col-one">
+
+				<img class="profile-pic"  src="images/profilepic.jpg" alt="" />
+
+			</div>
+
+         <div>
+
+            <h2>About Me</h2>
+
+            <p>Currently a Senior student at Gardner-Webb University majoring in Computer Science with a minor in Sports Management.
+            </p>
+
+         </div>
+
+      </div>
+
+   </section> <!-- About Section End-->
 		
-		<!-- Footer
-		================================================== -->
-		<footer>
-			2016. Created by Thomas Cardenas.
-		</footer>
+	<!-- Education Section
+	================================================== -->
+	<section id="education">
+		<article>
+			<header>
+				<hgroup>
+					<h1>Education</h1>
+					<h4>Gardner-Webb University</h3>
+				</hgroup>
+			</header>
+				
+			<p>Student, B.S. Degree in Computer Science - Class of 2017</p>
+
+            <p>
+            Course work includes: Android Programming, Data Structure and Algorithm Analysis, Programming II, Python Programming.
+            </p>
+				
+			<p>Favorites</p>
+				  
+		</article>
+	</section><!--End of the Education Section -->
+	
+	<!-- Work Section
+	================================================== -->
+	<section id="work">
+
+	</section><!--End of the Work Section -->
+		
+	<!-- Skill Section
+	================================================== -->
+	<section id="skills">
+		<article>
+			<header>
+				<h1>Skills</h1>
+			</header>
+				
+			<ul>
+				<li>Java</li>
+				<li>Python</li>
+					<li>Eclipse</li>
+					<li>Android Studio</li>
+					<li>HTML5</li>
+					<li>CSS</li>
+					<li>Git</li>
+				</ul>
+			</article>
+		</section><!--End of the Skill Section -->
+	
+	<!-- Contact Section
+	================================================== -->
+	<section id="contact">
+
+	</section><!--End of the Skill Section -->
+		
+	<!-- Footer
+	================================================== -->
+	<footer>
+		2016. Created by Thomas Cardenas.
+	</footer> <!--End of the Footer Section -->
 		
 	</body>
 </html>

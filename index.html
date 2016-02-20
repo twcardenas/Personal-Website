@@ -1,127 +1,135 @@
-<!DOCTYPE HTML>
-<html lang = "en">
-	<head>
-		<meta charset="utf-8"/>
-		<title>Thomas Cardenas</title> <!-- What will be displayed in the tab -->
-		
-		<!-- CSS
-		================================================== -->
-		<link rel="stylesheet" href="css/main.css"></link>
-	</head>
+<!DOCTYPE html>
+
+<head>
+	<!--What will be displayed in the tab-->
+	<title>Thomas Cardenas</title>
 	
-	<body>
+	<!--Link to the Stylesheet -->
+	<link rel="stylesheet" href="css/layout.css">
+</head>
 	
-	<!-- Header
-   ================================================== -->
-	<header id = "home">
+<body>
+	<div id ="container">
+		<div id ="home">
 		
-		<!-- Navigation bar that will stay at the top of the page -->
-		<div id="nav-bar">
-			<nav>
-				<ul> <!--Link the nav bar to all the different sectiosn of the page-->
-					<li href="#home">>Home</li>
-					<li href="#about">>About</li>
-					<li href="#education">>Education</li>
-					<li href="#work">>Work</li>
-					<li href="#skills">>Skills</li>
-					<li href="#contact">>Contact</li>
+			<!-- A Static Navigation Bar with the items:
+				Home, About, Education, Work, Skills, Project, Contact-->
+			<div id ="nav">
+				<ul>
+					<!-- \Link the nav bar to the parts of the page they correspond with-->
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#education">Education</a></li>
+					<li><a href="#work">Work</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
-			</nav>
-		</div>
-		
-		<!--Quick summary about me-->
-		<div>
-			<h1>I'm Thomas Cardenas.</h1>	
-			<h3>I am based in the Charlotte, North Carolina area.  A student working towards becoming a <span>software engineer</span> to create software and software for devices.
-			Let's start scrolling and learn more <span>about</span> me.</h3>
-			
-		</div>
-	 </header>
-
-	<!-- About Section
-	================================================== -->
-	<section id="about">
-
-		<div class="row">
-
-			<div class="col-one">
-
-				<img class="profile-pic"  src="images/profilepic.jpg" alt="" />
-
 			</div>
-
-         <div>
-
-            <h2>About Me</h2>
-
-            <p>Currently a Senior student at Gardner-Webb University majoring in Computer Science with a minor in Sports Management.
-            </p>
-
-         </div>
-
-      </div>
-
-   </section> <!-- About Section End-->
-		
-	<!-- Education Section
-	================================================== -->
-	<section id="education">
-		<article>
-			<header>
-				<hgroup>
-					<h1>Education</h1>
-					<h4>Gardner-Webb University</h3>
-				</hgroup>
-			</header>
-				
-			<p>Student, B.S. Degree in Computer Science - Class of 2017</p>
-
-            <p>
-            Course work includes: Android Programming, Data Structure and Algorithm Analysis, Programming II, Python Programming.
-            </p>
-				
-			<p>Favorites</p>
-				  
-		</article>
-	</section><!--End of the Education Section -->
+			
+			<!--This is what the user will see when they get to the website
+				A header saying I'm Thomas Cardenas and a small about me paragraph
+				key words are colored white-->
+			<div id ="intro">
+				<h1>I'm Thomas Cardenas.</h1>
+				<h3>
+					A Charlotte, North Carolina area student looking to become a <span>software engineer</span>.
+					Let's start scrolling and learn more about me.
+				</h3>
+			</div>
 	
-	<!-- Work Section
-	================================================== -->
-	<section id="work">
-
-	</section><!--End of the Work Section -->
+		</div>
 		
-	<!-- Skill Section
-	================================================== -->
-	<section id="skills">
-		<article>
-			<header>
-				<h1>Skills</h1>
-			</header>
+		<div id ="about">
+			<div id ="col-one">
+			
+			</div>
+			
+			<div id ="col-two">
+				<h2>About Me</h2>
 				
-			<ul>
-				<li>Java</li>
-				<li>Python</li>
-					<li>Eclipse</li>
-					<li>Android Studio</li>
-					<li>HTML5</li>
-					<li>CSS</li>
-					<li>Git</li>
-				</ul>
-			</article>
-		</section><!--End of the Skill Section -->
-	
-	<!-- Contact Section
-	================================================== -->
-	<section id="contact">
+				<p>
+					Currently a Senior student at Gardner-Webb University majoring in Computer Science with a minor in Sports Management.
+				</p>
+				
+			</div>
+		</div>
+		
+		<div id ="resume">
+			<div id ="education">
+				<div id ="left-col">
+					<h1><span>Education</span></h1>
+				</div>
+				
+				<!--Contains information about the college attended, and information such as course work-->
+				<div id ="right-col">
+					<h3>Gardner-Webb University</h3>
+					
+					<p>Student, B.S. Degree in Computer Science <span>&bull;</span> Class of 2017</p>
 
-	</section><!--End of the Skill Section -->
+						<p>
+							Course work includes: Android Programming, Data Structure and Algorithm Analysis, Programming II, Python Programing.
+						</p>
+				</div>
+			</div>
+			
+			<div id ="work">
+				<div id ="left-col">
+					<h1><span>Work</span></h1>
+				</div>
+				
+				<!--Contains information about the work experiences, and information such as job description-->
+				<div id ="right-col">
+					<h3>YMCA</h3>
+					
+					<p>Welness Coach <span>&bull;</span> March 2010 - Present</p>
+
+						<p>
+							Worked in the wellness center of the Ruby C. Hunt YMCA.  Help set clients onto the Fitlinxx System.
+						</p>
+				</div>
+			</div>
+			
+			<div id ="skills">
+				<div id ="left-col">
+					<h1><span>Skills</span></h1>
+				</div>
+				
+				<!--Contains information skills known, and rating them on how well fimilar with-->
+				<div id ="right-col">
+					<div class = "bars">
+					<div class="bars left">
+						<ul class="skills">
+							<li><span class="bar-expand java"></span><em>Java</em></li>
+							<li><span class="bar-expand python"></span><em>Python</em></li>
+							<li><span class="bar-expand eclipse"></span><em>Eclipse</em></li>
+						</ul>
+					</div>
+					<div class="bars right">
+						<ul class="skills">
+							<li><span class="bar-expand javafx"></span><em>JavaFX</em></li>
+							<li><span class="bar-expand html5"></span><em>HTML5</em></li>
+						</ul>
+					</div>
+					</div>
+				</div>
+			</div>
+			
+			<div id ="projects">
+			
+			</div>
+		</div>
 		
-	<!-- Footer
-	================================================== -->
-	<footer>
-		2016. Created by Thomas Cardenas.
-	</footer> <!--End of the Footer Section -->
+		<div id ="contact">
+
+		</div>
 		
-	</body>
+		<div id ="footer">
+			<!-- &copy; returns the copyright symbol-->
+			Copyright &copy; 2016 Thomas Cardenas.
+		</div>
+	</div>
+
+</body>
+
 </html>

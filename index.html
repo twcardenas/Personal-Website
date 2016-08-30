@@ -2,7 +2,7 @@
 
 <head>
 	<!--What will be displayed in the tab-->
-	<title>Thomas Cardenas</title>
+	<title>Thomas W. Cardenas</title>
 	
 	<!--Link to the Stylesheet -->
 	<link rel="stylesheet" href="css/layout.css">
@@ -10,12 +10,11 @@
 	
 <body>
 	<div id ="container">
-		<div id ="home">
-		
-			<!-- A Static Navigation Bar with the items:
-				Home, About, Education, Work, Skills, Project, Contact-->
+	
+	<!-- A Static Navigation Bar with the items:
+				Home, About, Education, Work, Skills, Projects, Contact-->
 			<div id ="nav">
-				<ul>
+				<ul id ="home-nav">
 					<!-- \Link the nav bar to the parts of the page they correspond with-->
 					<li><a href="#home">Home</a></li>
 					<li><a href="#about">About</a></li>
@@ -27,31 +26,50 @@
 				</ul>
 			</div>
 			
+		<div id ="home">
+			
 			<!--This is what the user will see when they get to the website
 				A header saying I'm Thomas Cardenas and a small about me paragraph
 				key words are colored white-->
 			<div id ="intro">
-				<h1>I'm Thomas Cardenas.</h1>
-				<h3>
+				<div id="header-left">
+					<h1>Thomas<br>W.<br>Cardenas.</h1>
+					<h3>
 					A Charlotte, North Carolina area student looking to become a <span>software engineer</span>.
-					Let's start scrolling and learn more about me.
-				</h3>
+					Let's start scrolling and learn more about me!
+					</h3>
+				</div>
+				
+				<div id="header-right">
+					
+				</div>
 			</div>
 	
-		</div>
-		
-		<div id ="about">
-			<div id ="col-one">
-			
+		<div id ="about">		
+			<div id="left-col">
+				<img src="images/profilepic.jpg">
 			</div>
-			
-			<div id ="col-two">
-				<h2>About Me</h2>
+			<div id ="right-col">
+					<div id="part-one">
+					<h2>About Me</h2>
+					
+					<p>
+						Currently a senior at Gardner-Webb University majoring in Computer Science with a minor in Sports Management.
+					</p>
+				</div>
 				
-				<p>
-					Currently a Senior student at Gardner-Webb University majoring in Computer Science with a minor in Sports Management.
-				</p>
-				
+				<div id="part-two">
+					<h2>Details</h2>
+					
+					<p>
+						Name:
+						Thomas Cardenas
+						Age:
+						22 years old
+						Location:
+						Charlotte, North Carolina
+					</p>
+				</div>
 			</div>
 		</div>
 		
@@ -103,30 +121,39 @@
 							<li><span class="bar-expand java"></span><em>Java</em></li>
 							<li><span class="bar-expand python"></span><em>Python</em></li>
 							<li><span class="bar-expand eclipse"></span><em>Eclipse</em></li>
+							<li><span class="bar-expand css3"></span><em>CSS3</em></li>
 						</ul>
 					</div>
 					<div class="bars right">
 						<ul class="skills">
 							<li><span class="bar-expand javafx"></span><em>JavaFX</em></li>
 							<li><span class="bar-expand html5"></span><em>HTML5</em></li>
+							<li><span class="bar-expand c++"></span><em>C++</em></li>
+							<li><span class="bar-expand android-studio"></span><em>Android Studios</em></li>
 						</ul>
 					</div>
 					</div>
 				</div>
 			</div>
-			
-			<div id ="projects">
-			
-			</div>
 		</div>
-		
-		<div id ="contact">
-
+		</div>
+		</div>
+		<div id ="projects">
+				<h1>Check Out Some of My Work</h1>
+			</div>
+		<div id="contact">
+				<ul>
+					<li><h1>CONNECT</h1></li>
+					<li><img src="images/GitHub-Mark-64px.png"></li>
+					<li><img src="images/In-2C-66px-R.png"></li>
+				</ul>
 		</div>
 		
 		<div id ="footer">
 			<!-- &copy; returns the copyright symbol-->
 			Copyright &copy; 2016 Thomas Cardenas.
+		</div>
+		
 		</div>
 	</div>
 

@@ -9,65 +9,122 @@
 	}
 
 /* ------------------------------------------------------------------ */
-/* b. Header Styles
+/* b. Navigation Bar Styles
 /* ------------------------------------------------------------------ */
+#nav {
+		vertical-align: baseline;
+		text-align: center;
+		background: black;
+		
+		font: 12px 'opensans-bold', sans-serif;
+		width: 100%;
+		text-transform: uppercase;
+		letter-spacing: 2.5px;
+		margin: 0 auto;
+		z-index: 100;
+		position: fixed;
+		left: 0;
+		top: 0;
+	}
+
+#home-nav > li {
+		display: inline;
+		width: 60px;
+}
+
+/* ------------------------------------------------------------------ */
+/* c. Header Styles
+/* ------------------------------------------------------------------ */
+	#header-left {
+		position: left;
+		width: 30%
+	}
+	
+	#header-right {
+		position: right;
+		width: 70%
+	}
 	
 	/*	Change the h1 color to white when intro is the parent
 		In our case, I want the header "I'm Thomas Cardenas text white, large
 		texted and centered */
-	#intro > h1 {
+	#header-left  > h1 {
 		/*I want the font opensans-bold, and sans-serif as a backup*/
 		/*The text to be large*/
 			font: 90px/1.1em 'opensans-bold', sans-serif;
 		color: white;
-		text-align: center;
+		text-align: left;
 	}
 	
 	/*	Change the h3 color to white when intro is the parent
 		In our case, I want the paragraph describing the person text white,
 		and centered */
-	#intro > h3 {
+	#header-left  > h3 {
 		/*I want the font librebaskerville-regular, and sans-serif as a backup*/
 		/*The text to be a sizable different than the h1*/
 			font: 18px/1.9em 'librebaskerville-regular', sans-serif;
 		/*	Make the h3 paragraph to fit within the length of h1
 			*/
-			width: 50%;
-		color: white;
+			color: white;
 		/*	Position the text in the middle of the page
 			Under the h1*/
-			text-align: center;
+			text-align: left;
 			margin: 0 auto;
 	}
+	
+	#home{
+		margin-left:40px;
+		margin-right: 40px;
+		margin-top: 50px;
+		margin-bottom: 20px;
+	}
+	
+	#home{
+		background-image: url(../images/header.jpg);
+		background-repeat: no-repeat;
+		background-position: top right;
+	}
+	
 /* ------------------------------------------------------------------ */
 /* c. About Section
 /* ------------------------------------------------------------------ */
 
-#about {
-	/*Best way to define a color is with hex code*/
-	/*Defining the back ground color of the about me section*/
+	#about {
+	
+		/*Best way to define a color is with hex code*/
+		/*Defining the back ground color of the about me section*/
 		background-color: #2B2B2B;
-	padding-top: 96px;
-	padding-bottom: 66px;
-	overflow: hidden;
-}
+		margin-top:10px;
+		padding: 40px;
+		height: 200px;
+	}
+	
+	#about > #left-col{
+		float: left;
+		position: center;
+		width: 25%;
+	}
 
+	#about > #right-col{
+		float: right;
+		width: 75%;
+	}
 	/*Change the h2 color to white when col-two is the parent*/
 	/*In our case, I want the About me Header to be white in the about me section*/
-	#col-two > h2 {
+	#right-col > h2 {
 		color: white;
 	}
 	
 /* ------------------------------------------------------------------ */
 /* d. Resume Section
 /* ------------------------------------------------------------------ */
-#resume {
-	/*Background color is white*/
+	#resume {
+		/*Background color is white*/
 		background-color: #fff;
-	padding-top: 50px;
-	padding-bottom: 72px;
-	overflow: hidden;
-}
+		padding-top: 50px;
+		padding-bottom: 72px;
+		overflow: hidden;
+	}
 
 	/*	Change h1 titles such as education, work, and skills to all caps.  
 		*/
@@ -92,23 +149,24 @@
 		font-weight: bold;
 	}
 
-#left-col{
-	float: left;
-	width: 25%;
-}
+	#resume * #left-col{
+		float: left;
+		width: 50%;
+		
+	}
 
-#left-col > h1{
-	padding-top: 9px;
-	padding-left: 90px;
-}
+	#resume * #left-col > h1{
+		padding-top: 9px;
+		padding-left: 90px;
+	}
 
-#right-col {
-	width: 75%;
-	padding-right: 10%;
-	float: right;
-}
-
-		/* ------------------------------------------------------------------ */
+	#resume * #right-col {
+		float: right;
+		width: 75%;
+		padding-right: 10%;
+	}
+	
+	/* ------------------------------------------------------------------ */
 		/* Skills Section
 		/* ------------------------------------------------------------------ */
 		
@@ -171,6 +229,11 @@
 				-moz-animation: photoshop 2s ease;
 				-webkit-animation: photoshop 2s ease;
 			}
+			.android-studio {
+				width: 40%;
+				-moz-animation: photoshop 2s ease;
+				-webkit-animation: photoshop 2s ease;
+			}
 			.python {
 				width: 55%;
 				-moz-animation: illustrator 2s ease;
@@ -191,11 +254,39 @@
 				-moz-animation: illustrator 2s ease;
 				-webkit-animation: illustrator 2s ease;
 			}
+			
+/* ------------------------------------------------------------------ */
+/* d. Project Section
+/* ------------------------------------------------------------------ */
+	#projects {
+		/*Background color is white*/
+		background-color: #fff;
+		padding: 20px;
+		overflow: hidden;
+		margin-left:40px;
+		margin-right:40px;
+	}
+	
+/* ------------------------------------------------------------------ */
+/* d. Contact Section
+/* ------------------------------------------------------------------ */
+	#contact {
+		background-color: #fff;
+		
+		padding: 20px;
+		overflow: hidden;
+		margin-top: 10px;
+		margin-left:40px;
+		margin-right:40px;
+	}
+	#contact > ul > li {
+		display: inline;
+		width: 60px;
+	}
 /* ------------------------------------------------------------------ */
 /* d. Footer Section
-/* ------------------------------------------------------------------ */
-
-#footer{
+/* ------------------------------------------------------------------ */	
+	#footer{
 	/*Be clear of any floating elements*/
 		clear: both;
 }

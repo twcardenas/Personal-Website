@@ -122,7 +122,6 @@
 		/*Background color is white*/
 		background-color: #fff;
 		padding-top: 50px;
-		padding-bottom: 72px;
 		overflow: hidden;
 	}
 
@@ -225,27 +224,27 @@
 				*/
 			
 			.java {
-				width: 60%;
-				-moz-animation: photoshop 2s ease;
-				-webkit-animation: photoshop 2s ease;
-			}
-			.android-studio {
-				width: 40%;
-				-moz-animation: photoshop 2s ease;
-				-webkit-animation: photoshop 2s ease;
-			}
-			.python {
-				width: 55%;
-				-moz-animation: illustrator 2s ease;
-				-webkit-animation: illustrator 2s ease;
-			}
-			.javafx{
 				width: 50%;
 				-moz-animation: photoshop 2s ease;
 				-webkit-animation: photoshop 2s ease;
 			}
+			.android-studio {
+				width: 25%;
+				-moz-animation: photoshop 2s ease;
+				-webkit-animation: photoshop 2s ease;
+			}
+			.python {
+				width: 25%;
+				-moz-animation: illustrator 2s ease;
+				-webkit-animation: illustrator 2s ease;
+			}
+			.javafx{
+				width: 65%;
+				-moz-animation: photoshop 2s ease;
+				-webkit-animation: photoshop 2s ease;
+			}
 			.html5 {
-				width: 40%;
+				width: 30%;
 				-moz-animation: illustrator 2s ease;
 				-webkit-animation: illustrator 2s ease;
 			}
@@ -288,5 +287,8 @@
 /* ------------------------------------------------------------------ */	
 	#footer{
 	/*Be clear of any floating elements*/
-		clear: both;
+	clear: both;
+	padding-left: 40px;
+	padding-top: 10px;
+	color: white;
 }

@@ -16,7 +16,7 @@
 		text-align: center;
 		background: black;
 		
-		font: 12px 'opensans-bold', sans-serif;
+		font: 16px 'opensans-bold', sans-serif;
 		width: 100%;
 		text-transform: uppercase;
 		letter-spacing: 2.5px;
@@ -30,6 +30,11 @@
 #home-nav > li {
 		display: inline;
 		width: 60px;
+		color: red;
+}
+
+#home-nav > li  > a {
+	color: red;
 }
 
 /* ------------------------------------------------------------------ */
@@ -111,9 +116,13 @@
 	}
 	/*Change the h2 color to white when col-two is the parent*/
 	/*In our case, I want the About me Header to be white in the about me section*/
-	#right-col > h2 {
+	#part-two > h2,  #part-one > h2, #part-two > p,  #part-one > p{
 		color: white;
 	}
+	#part-one > h2 {
+		color: white;
+	}
+	
 	
 /* ------------------------------------------------------------------ */
 /* d. Resume Section
@@ -265,6 +274,21 @@
 		margin-left:40px;
 		margin-right:40px;
 	}
+	
+/* ------------------------------------------------------------------ */
+/* d. Outside of Code Section
+/* ------------------------------------------------------------------ */
+	#outside {
+		/*Background color is white*/
+		background-color: #2B2B2B;
+		color: white;
+		padding: 20px;
+		overflow: hidden;
+		margin:20px;
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+	
 	
 /* ------------------------------------------------------------------ */
 /* d. Contact Section

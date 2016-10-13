@@ -1,318 +1,273 @@
-/* ------------------------------------------------------------------ */
-/* a. General Styles
-/* ------------------------------------------------------------------ */
+/*Blue #6ed3cd
+Purple #9068be
+white/grey #e1e8f0
+Redish #e62739*/
 
-	/*The Whole background of the body is black */
+/*
+grey dddfd4
+tan fae596
+light blue 3fb0ac
+dark blue 173e43
+*/
 
-	body { 
-		background-color: #0f0f0f; 
-	}
+/*
+blue 16174f
+burnt 963019
+white f6f1ed
+grey 667467
+*/
+
+/**
+`tan ede9ce
+light borwn  c7ad88
+medium grey 64706c
+redish 935347
+*/
 
 /* ------------------------------------------------------------------ */
-/* b. Navigation Bar Styles
+/* a. General Styles												  */
 /* ------------------------------------------------------------------ */
-#nav {
-		vertical-align: baseline;
-		text-align: center;
-		background: black;
-		
-		font: 16px 'opensans-bold', sans-serif;
-		width: 100%;
-		text-transform: uppercase;
-		letter-spacing: 2.5px;
-		margin: 0 auto;
-		z-index: 100;
-		position: fixed;
-		left: 0;
-		top: 0;
-	}
-
-#home-nav > li {
-		display: inline;
-		width: 60px;
-		color: red;
+body {
+	margin: 20px;
+	background: #381a5e;
+}
+/* ------------------------------------------------------------------ */
+/* b. Logo Styles													  */
+/* ------------------------------------------------------------------ */
+.logo {
+	float: left;
+	background-image: url(images/logo.jpg);
+	background-repeat: no-repeat;
+	background-position: top right;
+	height: 35px;
+	width: 35px;
+}
+/* ------------------------------------------------------------------ */
+/* c. Navigation Bar Styles											  */
+/* ------------------------------------------------------------------ */
+header > nav {
+	height: 25px;
+	text-align: right;
+	padding: 10px 0 0 20px;
+	background: #381a5e;
 }
 
-#home-nav > li  > a {
-	color: red;
+header > nav > a {
+	display: inline-block;
+	margin-left: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #ff5d5d;
+	font: 18px  'opensans-bold', sans-serif;
+	text-decoration: none;
+}
+
+header > nav > a:hover {
+	color: #963019;
 }
 
 /* ------------------------------------------------------------------ */
-/* c. Header Styles
-/* ------------------------------------------------------------------ */
-	#header-left {
-		position: left;
-		width: 30%
-	}
-	
-	#header-right {
-		position: right;
-		width: 70%
-	}
-	
-	/*	Change the h1 color to white when intro is the parent
-		In our case, I want the header "I'm Thomas Cardenas text white, large
-		texted and centered */
-	#header-left  > h1 {
-		/*I want the font opensans-bold, and sans-serif as a backup*/
-		/*The text to be large*/
-			font: 90px/1.1em 'opensans-bold', sans-serif;
-		color: white;
-		text-align: left;
-	}
-	
-	/*	Change the h3 color to white when intro is the parent
-		In our case, I want the paragraph describing the person text white,
-		and centered */
-	#header-left  > h3 {
-		/*I want the font librebaskerville-regular, and sans-serif as a backup*/
-		/*The text to be a sizable different than the h1*/
-			font: 18px/1.9em 'librebaskerville-regular', sans-serif;
-		/*	Make the h3 paragraph to fit within the length of h1
-			*/
-			color: white;
-		/*	Position the text in the middle of the page
-			Under the h1*/
-			text-align: left;
-			margin: 0 auto;
-	}
-	
-	#home{
-		margin-left:40px;
-		margin-right: 40px;
-		margin-top: 50px;
-		margin-bottom: 20px;
-	}
-	
-	#home{
-		background-image: url(../images/header.jpg);
-		background-repeat: no-repeat;
-		background-position: top right;
-	}
-	
-/* ------------------------------------------------------------------ */
-/* c. About Section
+/* d. Header Styles												  	  */
 /* ------------------------------------------------------------------ */
 
-	#about {
-	
-		/*Best way to define a color is with hex code*/
-		/*Defining the back ground color of the about me section*/
-		background-color: #2B2B2B;
-		margin-top:10px;
-		padding: 40px;
-		height: 200px;
-	}
-	
-	#about > #left-col{
-		float: left;
-		position: center;
-		width: 25%;
-	}
+header { 
+	background: #381a5e; 
+	height: 500px;
+}
 
-	#about > #right-col{
-		float: right;
-		width: 75%;
-	}
-	/*Change the h2 color to white when col-two is the parent*/
-	/*In our case, I want the About me Header to be white in the about me section*/
-	#part-two > h2,  #part-one > h2, #part-two > p,  #part-one > p{
-		color: white;
-	}
-	#part-one > h2 {
-		color: white;
-	}
-	
-	
+.header-intro {
+	padding: 15px;
+	margin-top: 20px;
+	height: 400px;
+	background-image: url(../images/nheader.jpg);
+	background-position:center right;
+	background-repeat: no-repeat;
+	background-size: 300px 505px;
+}
+
+.header-intro > h1 {
+	font-weight: 900;
+	color: #ff5d5d;
+	text-transform: uppercase;
+	text-align: left;
+	letter-spacing: 0.1em;
+	clear: both;
+	font: 400%  'opensans-bold', sans-serif;
+}
+
+.kicker {
+	text-align: left;
+	width: 60%;
+	letter-spacing: 0.05em;
+	color: #ff5d5d;
+	font: 24px  'opensans-bold', sans-serif;
+}
+
 /* ------------------------------------------------------------------ */
-/* d. Resume Section
+/* e. About Styles												  	  */
 /* ------------------------------------------------------------------ */
-	#resume {
-		/*Background color is white*/
-		background-color: #fff;
-		padding-top: 50px;
-		overflow: hidden;
-	}
 
-	/*	Change h1 titles such as education, work, and skills to all caps.  
-		*/
-	#resume h1 {
-	   font: 18px/24px 'opensans-bold', sans-serif;
-	   /*Change to all caps*/
-	   text-transform: uppercase;
-	   letter-spacing: 1px;
-	}
-	/*	As well as the above, add a blue solid line underneath it
-		*/
-	#resume h1 span {
-	   border-bottom: 3px solid #11ABB0;
-	   padding-bottom: 6px;
-	}
+#about {
+	height: 275px;
+	padding: 25px 25px 10px 25px;
+	background: #ff5d5d;
+}
+
+#about > #left-col{
+	float: left;
+	position: center;
+	width: 20%;
+}
+
+#about > #right-col{
+	float: right;
+	width: 80%;
+	font-weight: 700;
+}
+
+#about * h2 {
+	font: 20px  'opensans-bold', sans-serif;
+	font-weight: bold;
+	color: #36002b;
+}
+
+#about * p {
+	font: 18px 'opensans-bold', sans-serif;
+	color: #36002b;
 	
-	/*
-		Change the college name, workplace to bold
-		*/
-	#resume h3 {
-		font: 25px 'opensans-bold', sans-serif;
-		font-weight: bold;
-	}
+}
+/* ------------------------------------------------------------------ */
+/* f. Resume Styles												      */
+/* ------------------------------------------------------------------ */
+#resume {
+	clear: both;
+	background-color: #fff;
+	padding: 25px;
+	overflow: hidden;
+}
 
-	#resume * #left-col{
-		float: left;
-		width: 50%;
-		
-	}
+/*	Change h1 titles such as education, work, and skills to all caps.  
+*/
+#resume h1 {
+   font: 18px/24px 'opensans-bold', sans-serif;
+   /*Change to all caps*/
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+/*	As well as the above, add a blue solid line underneath it */
+#resume h1 span {
+   border-bottom: 3px solid #ff5d5d;
+   padding-bottom: 6px;
+}
 
-	#resume * #left-col > h1{
-		padding-top: 9px;
-		padding-left: 90px;
-	}
+/*
+	Change the college name, workplace to bold
+*/
+#resume h3 {
+	font: 25px 'opensans-bold', sans-serif;
+	font-weight: bold;
+}
+
+#resume * #left-col{
+	float: left;
+	width: 30%;		
+}
+
+#resume * #left-col > h1{
+	padding-top: 9px;
+	padding-left: 25px;
+}
 
 	#resume * #right-col {
 		float: right;
-		width: 75%;
+		width: 70%;
 		padding-right: 10%;
 	}
-	
-	/* ------------------------------------------------------------------ */
-		/* Skills Section
-		/* ------------------------------------------------------------------ */
-		
-		.bars {
-			width: 95%;
-			float: left;
-			padding: 0;
-			text-align: left;
-		}
-		.bars .skills {
-			margin-top: 36px;
-		   list-style: none;
-		}
-		.bars li {
-		   position: relative;
-			margin-bottom: 60px;
-			background: #ccc;
-			height: 42px;
-			border-radius: 3px;
-		}
-		.bars li em {
-			font: 15px 'opensans-bold', sans-serif;
-		   color: #313131;
-			text-transform: uppercase;
-		   letter-spacing: 2px;
-			font-weight: normal;
-		   position: relative;
-			top: -36px;
-		}
-		
-		.bar-expand {
-			position: absolute;
-			left: 0;
-			top: 0;
 
-			margin: 0;
-			padding-right: 24px;
-			background: #313131;
-			display: inline-block;
-			height: 42px;
-			   line-height: 42px;
-			   border-radius: 3px 0 0 3px;
-		}
-		
-		.left {
-			float: left;
-			width: 50%;
-		}
-		
-		.right {
-			float: right;
-			width: 50%;
-		}
-			
-			/*	This contains the percentage of how knowledgeable I am in each listed skill
-				*/
-			
-			.java {
-				width: 50%;
-				-moz-animation: photoshop 2s ease;
-				-webkit-animation: photoshop 2s ease;
-			}
-			.android-studio {
-				width: 25%;
-				-moz-animation: photoshop 2s ease;
-				-webkit-animation: photoshop 2s ease;
-			}
-			.python {
-				width: 25%;
-				-moz-animation: illustrator 2s ease;
-				-webkit-animation: illustrator 2s ease;
-			}
-			.javafx{
-				width: 65%;
-				-moz-animation: photoshop 2s ease;
-				-webkit-animation: photoshop 2s ease;
-			}
-			.html5 {
-				width: 30%;
-				-moz-animation: illustrator 2s ease;
-				-webkit-animation: illustrator 2s ease;
-			}
-			.eclipse {
-				width: 70%;
-				-moz-animation: illustrator 2s ease;
-				-webkit-animation: illustrator 2s ease;
-			}
-			
 /* ------------------------------------------------------------------ */
-/* d. Project Section
+/* f1. Education Styles												      */
 /* ------------------------------------------------------------------ */
-	#projects {
-		/*Background color is white*/
-		background-color: #fff;
-		padding: 20px;
-		overflow: hidden;
-		margin-left:40px;
-		margin-right:40px;
-	}
-	
+
 /* ------------------------------------------------------------------ */
-/* d. Outside of Code Section
+/* g. Project Styles												      */
 /* ------------------------------------------------------------------ */
-	#outside {
-		/*Background color is white*/
-		background-color: #2B2B2B;
-		color: white;
-		padding: 20px;
-		overflow: hidden;
-		margin:20px;
-		margin-left: 40px;
-		margin-right: 40px;
-	}
-	
-	
-/* ------------------------------------------------------------------ */
-/* d. Contact Section
-/* ------------------------------------------------------------------ */
-	#contact {
-		background-color: #fff;
-		
-		padding: 20px;
-		overflow: hidden;
-		margin-top: 10px;
-		margin-left:40px;
-		margin-right:40px;
-	}
-	#contact > ul > li {
-		display: inline;
-		width: 60px;
-	}
-/* ------------------------------------------------------------------ */
-/* d. Footer Section
-/* ------------------------------------------------------------------ */	
-	#footer{
-	/*Be clear of any floating elements*/
-	clear: both;
-	padding-left: 40px;
-	padding-top: 10px;
-	color: white;
+#projects {
+	background-color: #afdbcf;
+	padding: 25px;
+	height: 200px;
+	overflow: hidden;
 }
+
+#projects > h1 { 
+	font: 25px 'opensans-bold', sans-serif;
+	font-weight: bold;
+}
+
+/* ------------------------------------------------------------------ */
+/* h. Outside of Code Section
+/* ------------------------------------------------------------------ */
+#outside {
+	/*Background color is white*/
+	background-color: #36002b;
+	color: white;
+	padding: 20px;
+	overflow: hidden;
+}
+
+#outside > h1 { 
+	font: 25px 'opensans-bold', sans-serif;
+	font-weight: bold;
+}
+
+#outside * h4 {
+	font: 16px  'opensans-bold', sans-serif;
+	font-weight: bold;
+}
+
+#outside * p {
+	font: 14px 'opensans-bold', sans-serif;
+}
+	
+/* ------------------------------------------------------------------ */
+/* y. Contact Styles												      */
+/* ------------------------------------------------------------------ */
+#contact {
+	clear: both;
+	color: white;
+	background-color: #91cc9a;
+	height: 150px;
+	width: 100%;
+}
+
+#contact > h1 {
+	font: 32px 'opensans-bold', sans-serif;
+	padding-left:20px;
+	padding-top:35px;
+	float: left;
+	width: 10%;
+}
+
+.nav-contact {
+	padding-top: 40px;
+	float: right;
+	width: 87%;
+	text-align: left;
+}
+
+.nav-contact > a {
+	display: inline-block;
+	margin-left: 20px;
+}
+/* ------------------------------------------------------------------ */
+/* z. Footer Styles												      */
+/* ------------------------------------------------------------------ */
+footer {
+	clear: both;
+	font: 18px 'opensans-bold', sans-serif;
+	text-align: left;
+	color: white;
+	background: #381a5e;
+	height: 50px;
+	width: 100%;
+	padding: 25px;
+}	

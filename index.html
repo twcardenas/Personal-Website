@@ -9,172 +9,138 @@
 </head>
 	
 <body>
-	<div id ="container">
+	<header>
+		<div class="logo">
+		
+		</div>
+		
+		<nav>
+			<a href="#about">About</a>
+			<a href="#education">Education</a>
+			<a href="#work">Work</a>
+			<a href="#skills">Skills</a>
+			<a href="#projects">Projects</a>
+			<a href="#outside">Hobbies</a>
+			<a href="#contact">Contact</a>
+		</nav>
+		
+		<div class="header-intro">
+			<h1><span>Thomas<br>W.<br>Cardenas<span></h1>
+			<p class="kicker">Thomas is a C.S. student that enjoys creating software and apps.</p>
+		</div>	
+	</header>
 	
-	<!-- A Static Navigation Bar with the items:
-				Home, About, Education, Work, Skills, Projects, Contact-->
-			<div id ="nav">
-				<ul id ="home-nav">
-					<!-- \Link the nav bar to the parts of the page they correspond with-->
-					<li><a href="#home">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#education">Education</a></li>
-					<li><a href="#work">Work</a></li>
-					<li><a href="#skills">Skills</a></li>
-					<li><a href="#projects">Projects</a></li>
-					<li><a href="#outside">Hobbies</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</div>
+	<section id="about">
+		<div id="left-col">
+			<img src="images/profilepic.jpg">
+		</div>
+		<div id="right-col">
+			<h2>About Me</h2>
+			<p>
+				Currently a senior at Gardner-Webb University majoring in Computer Science with a minor in Sports Management.  Fitness has been
+				a part of my life for several years now.  After taking an intro to Java class I found out how passionate I am about coding.  I
+				spend a huge chunk of my free time doing what I love, making software, bettering my coding skills.  Currently building software I wish there were software or
+				had the features I want when doing one of my <a href="#outside">hobbies</a> such as working out and genealogy.
+			</p>
 			
-		<div id ="home">
-			
-			<!--This is what the user will see when they get to the website
-				A header saying I'm Thomas Cardenas and a small about me paragraph
-				key words are colored white-->
-			<div id ="intro">
-				<div id="header-left">
-					<h1>Thomas<br>W.<br>Cardenas.</h1>
-					<h3>
-					A Charlotte, North Carolina area student looking to become a <span>software engineer</span>.
-					Let's start scrolling and learn more about me!
-					</h3>
-				</div>
-				
-				<div id="header-right">
-					
-				</div>
-			</div>
-	
-		<div id ="about">		
-			<div id="left-col">
-				<img src="images/profilepic.jpg">
-			</div>
-			<div id ="right-col">
-					<div id="part-one">
-					<h2>About Me</h2>
-					
-					<p>
-						Currently a senior at Gardner-Webb University majoring in Computer Science with a minor in Sports Management.
-					</p>
-				</div>
-				
-				<div id="part-two">
-					<h2>Details</h2>
+			<h2>Details</h2>
 					
 					<p>
 						Name:
-						Thomas Cardenas
+						Thomas Cardenas <br>
 						Age:
-						22 years old
+						22 years old<br>
 						Location:
 						Charlotte, North Carolina
 					</p>
-				</div>
+		</div>
+	</section>
+	
+	<section id="resume">
+		<div id ="education">
+			<div id ="left-col">
+				<h1><span>Education</span></h1>
+			</div>
+			
+			<!--Contains information about the college attended, and information such as course work-->
+			<div id ="right-col">
+				<h3>Gardner-Webb University <span>&bull;</span> January 2015 - present</h3>
+					
+				<!--<p>Student, B.S. Degree in Computer Science <span>&bull;</span> Class of 2018</p>-->
+				<p>	Course work includes: Android Programming, Data Structure and Algorithm Analysis, Programming II, Python Programing.</p>
+				
+				<h3>East Carolina University <span>&bull;</span> August 2013 - December 2014</h3>
+				
+				<h3>Gardner-Webb University <span>&bull;</span> August 2012 - May 2013</h3>
 			</div>
 		</div>
 		
-		<div id ="resume">
-			<div id ="education">
-				<div id ="left-col">
-					<h1><span>Education</span></h1>
-				</div>
-				
-				<!--Contains information about the college attended, and information such as course work-->
-				<div id ="right-col">
-					<h3>Gardner-Webb University</h3>
-					
-					<p>Student, B.S. Degree in Computer Science <span>&bull;</span> Class of 2017</p>
-
-						<p>
-							Course work includes: Android Programming, Data Structure and Algorithm Analysis, Programming II, Python Programing.
-						</p>
-				</div>
+		<div id ="work">
+			<div id ="left-col">
+				<h1><span>Work</span></h1>
 			</div>
 			
-			<div id ="work">
-				<div id ="left-col">
-					<h1><span>Work</span></h1>
-				</div>
+			<!--Contains information about the work experiences, and information such as job description-->
+			<div id ="right-col">
+			
+				<h3>Wal-Mart Distribution Center</h3>
 				
-				<!--Contains information about the work experiences, and information such as job description-->
-				<div id ="right-col">
-					<h3>YMCA</h3>
-					
+					<p>Staple Stock Reciever <span>&bull;</span> October 2016 - Present</p>
+
+					<p>Unload trucks</p>
+				
+				<h3>YMCA</h3>
+				
 					<p>Welness Coach <span>&bull;</span> March 2010 - Present</p>
 
-						<p>
-							Worked in the wellness center of the Ruby C. Hunt YMCA.  Help set clients onto the Fitlinxx System.
-						</p>
-				</div>
+					<p>	Worked in the wellness center of the Ruby C. Hunt YMCA.  Help set clients onto the Fitlinxx System.	</p>
+			</div>
+		</div>
+			
+		<div id ="skills">
+			<div id ="left-col">
+				<h1><span>Skills</span></h1>
+			</div>
+		</div>
+	</section>
+	
+	<section id ="projects">
+		<h1>Projects</h1>
+	</section>
+	
+	<section id="outside">
+		<h1>Outside of Coding</h1>
+		<div id="fitness">
+			<h4>Working Out</h4>
+			<p>Since 10th grade fitness has been a part of my life.  Working towards getting stronger and learning new tricks.  Since 
+				I've been achieve a current personal record of a 555 lbs. Squat, 365 lbs. bench press, 315 lbs. clean and jerk along with 
+				other achievements I am proud of.  Always challenging my self to do better and achieve a wide range of skill sets of fitness</p>
+		</div>
+		<div id="genealogy">
+			<h4>Genealogy</h4>
+			<p>I've been researching my family history since 7th grade.  Being able to find out where my origins are from.  About what my
+			ancestors and cousins.  Also being able to find new-to-me cousins and being able to connect with family members.  It has
+			been one of the most rewarding things.  Genealogy is a never ending project.  Always researching.</p>
+		</div>
+	</section>
+	
+	<section id="contact">
+		<h1>CONTACT</h1>
+		<nav class="nav-contact">
+			<a href="https://github.com/twcardenas"><img src="images/git.png"></a>
+			<a href="https://www.linkedin.com/in/twcardenas"><img src="images/link.png"></a>
+		</nav>
+	</section>
+
+	<footer>
+		<div class="lockup">
+			<div class="logo">
+		
 			</div>
 			
-			<div id ="skills">
-				<div id ="left-col">
-					<h1><span>Skills</span></h1>
-				</div>
-				
-				<!--Contains information skills known, and rating them on how well fimilar with-->
-				<div id ="right-col">
-					<div class = "bars">
-					<div class="bars left">
-						<ul class="skills">
-							<li><span class="bar-expand java"></span><em>Java</em></li>
-							<li><span class="bar-expand python"></span><em>Python</em></li>
-							<li><span class="bar-expand eclipse"></span><em>Eclipse</em></li>
-							<li><span class="bar-expand css3"></span><em>CSS3</em></li>
-						</ul>
-					</div>
-					<div class="bars right">
-						<ul class="skills">
-							<li><span class="bar-expand javafx"></span><em>JavaFX</em></li>
-							<li><span class="bar-expand html5"></span><em>HTML5</em></li>
-							<li><span class="bar-expand c++"></span><em>C++</em></li>
-							<li><span class="bar-expand android-studio"></span><em>Android Studios</em></li>
-						</ul>
-					</div>
-					</div>
-				</div>
-			</div>
+			<p>Copyright &copy; 2016 Thomas Cardenas.</p>
 		</div>
-		</div>
-		</div>
-		<div id ="projects">
-				<h1>Check Out Some of My Work</h1>
-		</div>
-		
-		<div id="outside">
-			<h1>Outside of Coding</h1>
-			<div id="fitness">
-				<h4>Working Out</h4>
-				<p>Since 10th grade fitness has been a part of my life.  Working towards getting stronger and learning new tricks.  Since 
-					I've been achieve a current personal record of a 555 lbs. Squat, 365 lbs. bench press, 315 lbs. clean and jerk along with 
-					other achievements I am proud of.  Always challenging my self to do better and achieve a wide range of skill sets of fitness</p>
-			</div>
-			<div id="genealogy">
-				<h4>Genealogy</h4>
-				<p>I've been researching my family history since 7th grade.  Being able to find out where my origins are from.  About what my
-				ancestors and cousins.  Also being able to find new-to-me cousins and being able to connect with family members.  It has
-				been one of the most rewarding things.  Genealogy is a never ending project.  Always researching.</p>
-			</div>
-		</div>
-		
-		<div id="contact">
-				<ul>
-					<li><h1>CONNECT</h1></li>
-					<li><a href="https://github.com/twcardenas"><img src="images/GitHub-Mark-64px.png"></a></li>
-					<li><a href="https://www.linkedin.com/in/twcardenas"><img src="images/In-2C-66px-R.png"></a></li>
-				</ul>
-		</div>
-		
-		<div id ="footer">
-			<!-- &copy; returns the copyright symbol-->
-			Copyright &copy; 2016 Thomas Cardenas.
-		</div>
-		
-		</div>
-	</div>
-
+	</footer>
 </body>
 
 </html>

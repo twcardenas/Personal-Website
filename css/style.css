@@ -1,0 +1,281 @@
+@font-face {
+  font-family: Debby;
+  src: url("Debby.otf") format("opentype");
+}
+
+@font-face {
+  font-family: RBNo2;
+  src: url("RBNo2Light.otf") format("opentype");
+}
+
+:root {
+  --base-deep-blue: #141163;
+  --base-navy-blue: #17577e;
+  --base-dark-teal: #188a8d;
+  --accent-dark-green: #3f9f7f;
+  --accent-green: #60dd8e;
+}
+
+/* ------------------------------------------------------------------ */
+/* d. Header Styles												  	  */
+/* ------------------------------------------------------------------ */
+
+header {
+	background: var(--base-deep-blue);
+	height: 600px;
+}
+
+.logo {
+  height: 100%;
+  width: 100%;
+  left: -15%;
+  background-image: url(../images/name-logo.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  }
+
+.tom-box {
+  position: relative;
+  height: 600px;
+  background-image: url(../images/tom-rocks.jpg);
+  width: 100%;
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+
+
+/* ------------------------------------------------------------------ */
+/* c. Navigation Bar Styles											  */
+/* ------------------------------------------------------------------ */
+header > .nav-bar {
+  all: initial;
+  * {
+    all: unset;
+  }
+	height: 25px;
+	text-align: center;
+  padding: 10px 0px 0px 20px;
+  margin-top:  -10px;
+	width: 100%;
+	background: var(--base-deep-blue);
+	position: fixed;
+}
+
+header > .nav-bar > a {
+  all: initial;
+  * {
+    all: unset;
+  }
+	display: inline-block;
+	margin-left: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: var(--accent-green);
+	font: 18px  'opensans-bold', sans-serif;
+	text-decoration: none;
+}
+
+header > .nav-bar > a:hover {
+  color: var(--accent-dark-green);
+}
+
+/* ------------------------------------------------------------------ */
+/* e. About Styles												  	  */
+/* ------------------------------------------------------------------ */
+
+#about {
+  height: 500px;
+	padding: 25px 25px 10px 25px;
+	background: var(--base-navy-blue);
+}
+
+#about > #left-col{
+	float: left;
+	position: center;
+  padding-left: 5%;
+  padding-top: 7%;
+	width: 20%;
+}
+
+#about > #right-col{
+	float: right;
+	width: 70%;
+	font-weight: 700;
+}
+
+#about * .about-h2 {
+  text-shadow: none;
+	font: 20px  'opensans-bold', sans-serif;
+	font-weight: bold;
+	color: var(--accent-green);
+}
+
+#about * .about-p {
+  text-shadow: none;
+	font: 18px 'opensans-bold', sans-serif;
+	color: var(--accent-dark-green);
+
+}
+/* ------------------------------------------------------------------ */
+/* f. Resume Styles												      */
+/* ------------------------------------------------------------------ */
+#resume {
+	clear: both;
+	background-color: #fff;
+	padding: 25px;
+	overflow: hidden;
+}
+
+/*	Change h1 titles such as education, work, and skills to all caps.
+*/
+#resume h1 {
+   font: 18px/24px 'opensans-bold', sans-serif;
+   /*Change to all caps*/
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+/*	As well as the above, add a blue solid line underneath it */
+#resume h1 span {
+   border-bottom: 3px solid var(--base-navy-blue);
+   padding-bottom: 6px;
+}
+
+/*
+	Change the college name, workplace to bold
+*/
+#resume h3 {
+	font: 25px 'opensans-bold', sans-serif;
+	font-weight: bold;
+}
+
+#resume * #left-col{
+	float: left;
+	width: 30%;
+}
+
+#resume * #left-col > h1{
+	padding-top: 9px;
+	padding-left: 25px;
+}
+
+	#resume * #right-col {
+    padding-left: -20px;
+		float: right;
+		width: 75%;
+	}
+
+.cheer-img{
+      height: auto;
+      width: auto;
+      max-width: 500px;
+      max-height: 500px;
+}
+
+.ui-content {
+  padding: 0;
+}
+
+/* ------------------------------------------------------------------ */
+/* f1. Skills Styles												  */
+/* ------------------------------------------------------------------ */
+
+		.bars {
+			width: 100%;
+			float: left;
+			text-align: left;
+      padding-right: 10px;
+		}
+		.bars .skills {
+			margin-top: 36px;
+      margin-left: -40px;
+		  list-style: none;
+		}
+		.bars li {
+		  position: relative;
+			margin-bottom: 60px;
+			background: #ccc;
+			height: 25px;
+            border-radius: 0 0 0 0;
+		}
+		.bars li em {
+			font: 15px 'opensans-bold', sans-serif;
+		  color: #313131;
+			text-transform: uppercase;
+		  letter-spacing: 2px;
+			font-weight: normal;
+		  position: relative;
+			top: -36px;
+		}
+
+    .left {
+ 			float: left;
+ 			width: 45%;
+ 		}
+
+ 		.right {
+ 			float: right;
+ 			width: 45%;
+ 		}
+
+		.bar-expand {
+			position: absolute;
+			left: 0;
+			top: 0;
+      border-radius: 0 0 0 0;
+			margin: 0;
+			padding-right: 24px;
+			background: #313131;
+			display: inline-block;
+			height: 25px;
+		   line-height: 42px;
+		}
+
+/*	This contains the percentage of how knowledgeable I am in each listed skill*/
+
+ 			.java {
+ 				width: 60%;
+ 				-moz-animation: photoshop 2s ease;
+ 				-webkit-animation: photoshop 2s ease;
+ 			}
+ 			.python {
+ 				width: 36%;
+ 				-moz-animation: illustrator 2s ease;
+ 				-webkit-animation: illustrator 2s ease;
+ 			}
+ 			.javafx{
+ 				width: 65%;
+ 				-moz-animation: photoshop 2s ease;
+ 				-webkit-animation: photoshop 2s ease;
+ 			}
+ 			.html5 {
+ 				width: 50%;
+ 				-moz-animation: illustrator 2s ease;
+ 				-webkit-animation: illustrator 2s ease;
+ 			}
+ 			.eclipse {
+ 				width: 70%;
+ 				-moz-animation: illustrator 2s ease;
+ 				-webkit-animation: illustrator 2s ease;
+ 			}
+
+/* ------------------------------------------------------------------ */
+/* e. Qoute Styles												  	  */
+/* ------------------------------------------------------------------ */
+.qoute {
+  padding: 75px;
+  background-color: var(--base-deep-blue);
+}
+.qoute > p {
+  font-weight: 900;
+	color: var(--accent-green);
+	text-transform: uppercase;
+	text-align: left;
+	letter-spacing: 0.1em;
+	clear: both;
+	font: 200%  Debby, sans-serif;
+}

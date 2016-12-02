@@ -1,11 +1,11 @@
+/* ------------------------------------------------------------------ */
+/* a. Variables                             										  	  */
+/* ------------------------------------------------------------------ */
+
+
 @font-face {
   font-family: Debby;
   src: url("Debby.otf") format("opentype");
-}
-
-@font-face {
-  font-family: RBNo2;
-  src: url("RBNo2Light.otf") format("opentype");
 }
 
 :root {
@@ -17,7 +17,7 @@
 }
 
 /* ------------------------------------------------------------------ */
-/* d. Header Styles												  	  */
+/* b. Header Styles									                       			  	  */
 /* ------------------------------------------------------------------ */
 
 header {
@@ -33,7 +33,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
-  }
+}
 
 .tom-box {
   position: relative;
@@ -48,50 +48,20 @@ header {
 }
 
 
-
 /* ------------------------------------------------------------------ */
-/* c. Navigation Bar Styles											  */
-/* ------------------------------------------------------------------ */
-header > .nav-bar {
-  all: initial;
-  * {
-    all: unset;
-  }
-	height: 25px;
-	text-align: center;
-  padding: 10px 0px 0px 20px;
-  margin-top:  -10px;
-	width: 100%;
-	background: var(--base-deep-blue);
-	position: fixed;
-}
-
-header > .nav-bar > a {
-  all: initial;
-  * {
-    all: unset;
-  }
-	display: inline-block;
-	margin-left: 20px;
-	font-weight: 700;
-	text-transform: uppercase;
-	color: var(--accent-green);
-	font: 18px  'opensans-bold', sans-serif;
-	text-decoration: none;
-}
-
-header > .nav-bar > a:hover {
-  color: var(--accent-dark-green);
-}
-
-/* ------------------------------------------------------------------ */
-/* e. About Styles												  	  */
+/* d. About Styles	                       											  	  */
 /* ------------------------------------------------------------------ */
 
 #about {
   height: 500px;
 	padding: 25px 25px 10px 25px;
 	background: var(--base-navy-blue);
+}
+
+.abt-photo {
+  height: 100%;
+  width: 100%;
+  margin-top: -4%;
 }
 
 #about > #left-col{
@@ -119,10 +89,15 @@ header > .nav-bar > a:hover {
   text-shadow: none;
 	font: 18px 'opensans-bold', sans-serif;
 	color: var(--accent-dark-green);
+}
 
+.en, .es, .gr {
+  font: 24px  'opensans-bold', sans-serif;
+  text-decoration: none;
+  color: var(--accent-green);
 }
 /* ------------------------------------------------------------------ */
-/* f. Resume Styles												      */
+/* e. Resume Styles					                      							      */
 /* ------------------------------------------------------------------ */
 #resume {
 	clear: both;
@@ -163,11 +138,17 @@ header > .nav-bar > a:hover {
 	padding-left: 25px;
 }
 
-	#resume * #right-col {
+#resume * #right-col {
     padding-left: -20px;
 		float: right;
 		width: 75%;
-	}
+}
+
+  .schools {
+    padding-left: -20px;
+		float: right;
+		width: 75%;
+  }
 
 .cheer-img{
       height: auto;
@@ -181,7 +162,7 @@ header > .nav-bar > a:hover {
 }
 
 /* ------------------------------------------------------------------ */
-/* f1. Skills Styles												  */
+/* f. Skills Styles												                            */
 /* ------------------------------------------------------------------ */
 
 		.bars {
@@ -229,7 +210,7 @@ header > .nav-bar > a:hover {
       border-radius: 0 0 0 0;
 			margin: 0;
 			padding-right: 24px;
-			background: #313131;
+			background: var(--accent-green);
 			display: inline-block;
 			height: 25px;
 		   line-height: 42px;
@@ -263,14 +244,30 @@ header > .nav-bar > a:hover {
  				-webkit-animation: illustrator 2s ease;
  			}
 
+      .css {
+ 				width: 40%;
+ 				-moz-animation: illustrator 2s ease;
+ 				-webkit-animation: illustrator 2s ease;
+ 			}
+
+      .android {
+ 				width: 15%;
+ 				-moz-animation: illustrator 2s ease;
+ 				-webkit-animation: illustrator 2s ease;
+ 			}
+
 /* ------------------------------------------------------------------ */
-/* e. Qoute Styles												  	  */
+/* g. Qoute Styles			                       									  	  */
 /* ------------------------------------------------------------------ */
 .qoute {
   padding: 75px;
   background-color: var(--base-deep-blue);
 }
 .qoute > p {
+  all: initial;
+  * {
+    all: unset;
+  }
   font-weight: 900;
 	color: var(--accent-green);
 	text-transform: uppercase;
@@ -278,4 +275,76 @@ header > .nav-bar > a:hover {
 	letter-spacing: 0.1em;
 	clear: both;
 	font: 200%  Debby, sans-serif;
+  text-decoration: none;
+}
+
+/* ------------------------------------------------------------------ */
+/* h. Interest Styles						                     						  	  */
+/* ------------------------------------------------------------------ */
+
+
+#interest {
+	clear: both;
+	color: var(--base-deep-blue);
+	background-color: var(--accent-green);
+	height: 250px;
+	width: 100%;
+  text-decoration: none;
+}
+
+#interest > h1 {
+	font: 32px 'opensans-bold', sans-serif;
+	padding-left:20px;
+	padding-top:25px;
+	float: left;
+	width: 10%;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+.nav-interest {
+	padding-top: 40px;
+	float: right;
+	width: 80%;
+	text-align: left;
+}
+
+.nav-interest > a {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+/* ------------------------------------------------------------------ */
+/* i. Footer Styles												  	                        */
+/* ------------------------------------------------------------------ */
+
+#contact {
+	clear: both;
+	color: var(--base-deep-blue);
+	background-color: var(--accent-green);
+	height: 150px;
+	width: 100%;
+  text-decoration: none;
+}
+
+#contact > h1 {
+	font: 32px 'opensans-bold', sans-serif;
+	padding-left:20px;
+	padding-top:35px;
+	float: left;
+	width: 10%;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+.nav-contact {
+	padding-top: 40px;
+	float: right;
+	width: 80%;
+	text-align: left;
+}
+
+.nav-contact > a {
+	display: inline-block;
+	margin-left: 20px;
 }

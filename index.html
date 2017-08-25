@@ -1,208 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Thomas W. Cardenas</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/circle.css">
-    <link rel="icon" type="image/png" href="images/favicon.png">
-  </head>
-  <body>
-    <header class="tom-box">
-      <div class="back-ground"></div>
-      <div class="logo"></div>
-      <div class="fore-tom"></div>
-    </header>
+---
+layout: default
+title: Thomas W. Cardenas
+---
+<div class="home-wrap">
+    {% include header.html %}
 
-      <section id="about">
-    		<div id="left-col">
-    			<img class="abt-photo" src="images/aboutme.jpg">
-    		</div>
-    		<div id="right-col">
-    			<h2 class="about-h2">About Me</h2>
-    			<p class="about-p">
-    				Currently a senior at Gardner-Webb University majoring in Computer Science with a minor in Sports Management.  Fitness has been
-    				a part of my life for several years now.  After taking an intro to Java class I found out how passionate I am about coding.  I
-    				spend a huge chunk of my free time doing what I love, making software, bettering my coding skills.  Currently building software I wish there were software or
-    				had the features I want when doing one of my <a href="#outside">hobbies</a> such as working out and genealogy.
-    			</p>
+    <div class="home-sections">
 
-    			<h2 class=about-h2>Details</h2>
+        {% include section-about.html %}
 
-    					<p class="about-p">
-    						Name:
-    						Thomas Cardenas <br>
-    						Age:
-    						22 years old<br>
-    						Location:
-    						Charlotte, North Carolina
-    					</p>
-
-              <div class="c100 p100 medium">
-                <span><a class="en" data-theme="a" data-transition="fade">English</a></span>
-                  <div class="slice">
-                      <div class="bar"></div>
-                      <div class="fill"></div>
-                  </div>
-              </div>
-              <div class="c100 p25 medium">
-                <span><a class="es" data-theme="a" data-transition="fade">Español</a></span>
-                <div class="slice">
-                      <div class="bar"></div>
-                      <div class="fill"></div>
-                  </div>
-              </div>
-              <div class="c100 p10 medium">
-                  <span><a class="gr" data-theme="a" data-transition="fade">Deutsch</a></span>
-                  <div class="slice">
-                      <div class="bar"></div>
-                      <div class="fill"></div>
-                  </div>
-              </div>
-    		</div>
-    	</section>
-
-    <section id="resume">
-  			<div id ="left-col">
-  				<h1><span>Education</span></h1>
-  			</div>
-
-  			<!--Contains information about the college attended, and information such as course work-->
-  			<div id ="right-col" class="schools">
-          <div data-role="main" class="ui-content">
-            <div data-role="collapsible">
-              <h3 class="school">Gardner-Webb University <span>&bull;</span> January 2015 - present</h3>
-              <!--<p>Student, B.S. Degree in Computer Science <span>&bull;</span> Class of 2018</p>-->
-      				<h4>Course work includes</h4>
-              <p>Android Programming, Data Structure and Algorithm Analysis, Programming II, Python Programing.</p>
-              <h4>Activities</h4>
-              <h5>Cheerleading</h5>
-              <p>I was a 2015-2016 GWU Cheerleader. My first time ever cheering.
-                I cheered for the football, men's basketball, and women's basketball
-                teams.</p>
-              <div>
-          			<img class="cheer-img" src="images/cheer.jpg">
-          		</div>
-            </div>
-          </div>
-          <div data-role="main" class="ui-content">
-            <div data-role="collapsible">
-              <h3>East Carolina University <span>&bull;</span> August 2013 - December 2014</h3>
-              <p>I'm the expanded content.</p>
-            </div>
-          </div>
-          <div data-role="main" class="ui-content">
-            <div data-role="collapsible">
-              <h3>Gardner-Webb University <span>&bull;</span> August 2012 - May 2013</h3>
-              <p>I'm the expanded content.</p>
-            </div>
-          </div>
-  			</div>
-  		</div>
-
-      <div id="work">
-        <div id ="left-col">
-          <h1><span>Work</span></h1>
-        </div>
-
-        <!--Contains information about the work experiences, and information such as job description-->
-        <div id ="right-col">
-
-          <h3>Wal-Mart Distribution Center</h3>
-
-            <p><b>Staple Stock Reciever <span>&bull;</span> October 2016 - Present</b></p>
-
-            <p><span>&bull;</span>Apply labels to correct location on freights/pallets/merchandise</p>
-            <p><span>&bull;</span>Manage freight deliveries</p>
-            <p><span>&bull;</span>Provide basic maintenance to receiving equipment (e.g., cleaning, changing labels and ribbons)</p>
-            <p><span>&bull;</span>Maintain a safe work area</p>
-            <p><span>&bull;</span>Organize work area</p>
-
-          <h3>YMCA</h3>
-
-            <p><b>Wellness Coach <span>&bull;</span> March 2010 - Present</b></p>
-
-            <p><span>&bull;</span>Set up members on FitLinxx and educated them on the equipment</p>
-
-            <p><b>Group Fitness Instructor <span>&bull;</span> Dec 2014 - June 2015</b></p>
-            <p><span>&bull;</span>Created workout of the days</p>
-            <p><span>&bull;</span>Lead classes through the workout of the day</p>
-
-            <p><b>Sports Employee <span>&bull;</span> April 2012- July 2014</b></p>
-            <p><span>&bull;</span>Managed parties and solved customer issues; lead preparation and clean-up of parties</p>
-            <p><span>&bull;</span>Operated the concession stand, scoreboard, and field maintenance for baseball</p>
-            <p><span>&bull;</span>Operated the scoreboard and score sheet, did set up and clean-up for basketball games</p>
-            <p><span>&bull;</span>Educated on how to climb the rock wall and belayed customers</p>
-            <p><span>&bull;</span>Coach little kicks soccer, ages 3-5, through creating drills and refereed scrimmages</p>
-
-
-        </div>
-      </div>
-
-      <div id ="skills">
-  			<div id ="left-col">
-  				<h1><span>Skills</span></h1>
-  			</div>
-
-  			<!--Contains information skills known, and rating them on how well fimilar with-->
-            <div id ="right-col">
-                					<div class = "bars">
-                					<div class="bars left">
-                						<ul class="skills">
-                							<li><span class="bar-expand java"></span><em>Java</em></li>
-                							<li><span class="bar-expand python"></span><em>Python</em></li>
-                							<li><span class="bar-expand eclipse"></span><em>Eclipse</em></li>
-                             <li><span class="bar-expand windows"></span><em>Windows</em></li>
-                             <li><span class="bar-expand linux"></span><em>Linux</em></li>
-                             <li><span class="bar-expand c"></span><em>C</em></li>
-                             <li><span class="bar-expand c++"></span><em>C++</em></li>
-                						</ul>
-                					</div>
-                					<div class="bars right">
-                						<ul class="skills">
-                							<li><span class="bar-expand javafx"></span><em>JavaFX</em></li>
-               							<li><span class="bar-expand html5"></span><em>HTML5</em></li>
-                             <li><span class="bar-expand css"></span><em>CSS</em></li>
-                             <li><span class="bar-expand mac"></span><em>Mac</em></li>
-                             <li><span class="bar-expand ios-prog"></span><em>iOS Programming</em></li>
-                             <li><span class="bar-expand android"></span><em>Android</em></li>
-                						</ul>
-                					</div>
-                					</div>
-                				</div>
-  		</div>
-    </section>
-
-    <section class="projects">
-
-    </section>
-
-    <section id="interest">
-      <h1>Interest & Hobbies</h1>
-      <nav class="nav-interest">
-        <a class="geni" href="" data-toggle="tooltip" title="Genealogy"><img src="images/geni.png"></a>
-        <a href="" data-toggle="tooltip" title="Fitness"><img src="images/fit.png"></a>
-        <a href="" data-toggle="tooltip" title="Video Games"><img src="images/games.png"></a>
-      </nav>
-
-    </section>
-
-    <section class="qoute">
-      <p>"I was born not knowing and have had only a little time to change that here and there." -Richard Feynman</p>
-    </section>
-
-    <footer id="contact">
-      <h1>CONTACT</h1>
-      <nav class="nav-contact">
-        <a href="https://github.com/twcardenas"><img src="images/git.png"></a>
-        <a href="https://www.linkedin.com/in/twcardenas"><img src="images/link.png"></a>
-      </nav>
-    </footer>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="js/functions.js"></script>
-</body>
-</html>
+    </div>
+</div>
+<!--
+<div id="home">
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+-->

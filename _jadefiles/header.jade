@@ -1,0 +1,18 @@
+mixin nav-content()
+  ul
+    li: a(href="#about") About
+
+
+.mobile-nav
+  +nav-content()
+
+header
+  .header-position
+    h1.logo Thomas W Cardenas
+    
+    nav.site-nav
+      +nav-content()
+    
+    a(href="mailto:twcardenas@outlook.com").email-link +email me
+    
+    .mobile-nav-toggle: span

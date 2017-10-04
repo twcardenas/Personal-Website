@@ -713,53 +713,6 @@ section.about {
         margin-right: auto;
         max-width: 300px; } }
 
-section.youtube {
-  background-image: url(../img/youtube-bg.gif);
-  background-color: #e20a0a;
-  background-position: center;
-  background-size: cover;
-  color: white; }
-  section.youtube .home-cta {
-    color: #e20a0a; }
-  section.youtube .flex-video {
-    box-shadow: 0px 4px 40px 3px rgba(0, 0, 0, 0.5);
-    -webkit-transform: scale(1.4);
-            transform: scale(1.4); }
-    @media (max-width: 985px) {
-      section.youtube .flex-video {
-        -webkit-transform: scale(1);
-                transform: scale(1); } }
-  section.youtube .video-strip {
-    position: absolute;
-    top: 0;
-    height: calc(100% + 100px);
-    width: 100%;
-    margin: -50px 0;
-    background-image: url(../img/video-strip.png);
-    background-position: center 0px;
-    background-repeat: repeat-y;
-    background-size: 70%; }
-    @media (max-width: 640px) {
-      section.youtube .video-strip {
-        display: none; } }
-  section.youtube .col-1 {
-    position: relative;
-    height: 400px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: stretch;
-        align-items: stretch;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-pack: center;
-        justify-content: center; }
-    @media (max-width: 640px) {
-      section.youtube .col-1 {
-        height: auto;
-        padding: 50px 20px; }
-        section.youtube .col-1:last-child {
-          padding: 0px 20px 50px; } }
-
 .home-wrap {
   display: -ms-flexbox;
   display: flex;

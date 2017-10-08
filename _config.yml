@@ -1,3 +1,0 @@
-name: Thomas W. Cardenas
-markdown: kramdown
-exclude: ["node_modules", "gulpfile.js", "package.json"]

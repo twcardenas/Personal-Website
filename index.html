@@ -1,23 +1,137 @@
----
-layout: default
-title: Thomas W. Cardenas
----
-<div class="home-wrap">
-    {% include header.html %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thomas W. Cardenas</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
 
-    <div class="home-sections">
+    <div class="content">
+        <div class="intro">
+            <div>
+            <h1>Thomas W. Cardenas</h1>
+            <h5><em>Currently Construction</em></h5>
+            </div>
+        </div>
+        
+        <div class="about">
+            <h1>Hola, I'm Thomas</h1>
 
-        {% include section-about.html %}
+            <h3>I'm a detail oriented software engineer about building builing applications
+            we wish there was. </h3>
 
+            <p><strong>I'm a student at the University of North Carolina at Charlotte.</strong>
+            I study computer science with a concentration in software engineering.</p>
+
+            <p>I enjoy learning from all disciplines. Always continuing my education. New ideas, new point of views.
+                This helps lead to new ways to solve problems and to advancement. My goal is to never turn down an
+                opportunity to learn and to grow.</p>
+
+            <p><strong>When I'm not working & study</strong> you can find me playing DotA 2, in the gym doing
+                handstands, or in a library doing genealogy.</p>
+        </div>
+
+        <div class="education">
+            <h1>Education</h1>
+            <div class="col-1">
+                <h3>University of North Carolina at Charlotte</h3>
+                <p>Bachelor of Science in Computer Science-Software Engineering</p>
+                <p>Minor in Mathematics</p>
+            </div>
+            <div class="col-2">
+                <h3>Charlotte, North Carolina</h3>
+                <p>May 2019</p>
+            </div>
+            <div id="education-activities">
+                <input id="toggle" type="checkbox">
+                <label for="toggle">Activies & Activities</label>
+                <div id="expand">
+                    <h5>Activities</h5>
+                    <p>Charlotte 49er Cheerleading Team</p>
+                    <p>Aug 2017-May 2018</p>
+                    <h5>Courses</h5>
+                    <ul>
+                        <li>Intro to Java I/II</li>
+                        <li>Data Structures & Algorithms</li>
+                        <li>Intro to Security & Privacy</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="skills">
+            <h1>Skills</h1>
+            <h3>Development</h3>
+            <ul>
+                <li>Java</li>
+                <li>Python</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+            </ul>
+            <h3>Mobile</h3>
+            <ul>
+                <li>Android</li>
+            </ul>
+            <h3>Tools</h3>
+            <ul>
+                <li>Git + GitHub</li>
+                <li>JetBrains (Intellij, WebStorm, PyCharm, etc.)</li>
+                <li>Microsoft Office (Word, Excel, PowerPoint)</li>
+            </ul>
+            <h3>Design</h3>
+            <ul>
+                <li>[Data Coming Soon]</li>
+            </ul>
+            <h3>Knowledge</h3>
+            <ul>
+                <li>[Data Coming Soon]</li>
+            </ul>
+        </div>
+
+        <div class="resume">
+            <h1>Work Experience</h1>
+            <div>
+                <h3>Wal-Mart Distribution Center</h3>
+                <p>[Data Coming Soon]</p>
+            </div>
+    
+            <div>
+                <h3>Ruby C. Hunt YMCA</h3>
+                <p>[Data Coming Soon]</p>
+            </div>
+        </div>
+        
+        <div class="projects">
+            <h1>Projects</h1>
+            <div>
+                <div>
+                    <h3><a href="http://webpages.uncc.edu/tcardena/project/index.html">Cheer Charlotte</a></h3>
+                    <p>This was a class project I chose. Being on the cheer team, I noticed the website
+                    seemed a bit out of date. With that, I decided I would build a more modern version as well as meeting
+                    class project requirements.</p>
+                    <p>My goal was to get experience putting together a fully responsive website that used
+                    modern design trends to build.</p>
+
+                </div>
+    
+                <div>
+                    <h3>5k Color Dash</h3>
+                    <p>[Data Coming Soon]</p>
+                </div>
+
+                <div>
+                    <h3><a href="http://twcardenas.github.io/">Online Resume</a></h3>
+                    <p>This was a weekend personal project. I have experimented a lot of with this project. Trying different technologies
+                        and layout ideas.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact">
+            <p><a href="https://www.linkedin.com/in/twcardenas/">LinkedIn</a></p>
+            <p><a href="https://github.com/twcardenas">GitHub</a></p>
+        </div>
     </div>
-</div>
-<!--
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
--->
+</body>
+</html>

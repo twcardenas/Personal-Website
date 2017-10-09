@@ -194,7 +194,7 @@
 
 .projects{
     background: #34ADFF -webkit-linear-gradient(30deg, var(--main-pink) 35%, var(--main-deep-blue) 35%);
-    min-height: 400px;
+    min-height: 450px;
     width: 100%;
 }
 
@@ -225,17 +225,47 @@
 }
 
 .projects > div {
-    display: flex;
     padding: 10px;
 }
 
-.projects > div > div {
+.projects > div > .flex-item {
     margin: 10px;
-    height: 375px;
-    width: 33%;
+    padding-bottom: 25px;
+    height: 45%;
+    min-height: 375px;
+    width: 30%;
     background-color: rgba(177,177,177, .75);
     overflow: hidden;
 }
+
+.projects > div > .flex-item > div {
+    height: 85%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.projects > div > .flex-item > .flex-container {
+    height: 15%;
+    width: 100%;
+}
+
+.projects .flex-tag {
+    margin: 5px;
+    padding: 5px 8px 5px 8px;
+    height: 20px;
+    background-color: rgba(21,43,66, 1);
+    font-family: 'Merriweather Sans', sans-serif;
+    color: var(--main-whi);
+    overflow: hidden;
+}
+
+.projects .flex-container .flex-tag:first-child {
+    font-family: 'Merriweather Sans', sans-serif;
+    background-color: rgba(177,177,177, 0);
+    color: var(--main-deep-blue);
+    text-transform: uppercase;
+}
+
 .contact {
     background: #013A6B -webkit-linear-gradient(150deg, var(--main-grey) 50%, var(--main-steel) 50%);
     min-height: 150px;
@@ -251,4 +281,27 @@
     color: var(--main-whi);
     font-family: 'Merriweather', sans-serif;
     font-size: 24px;
+}
+
+/* General */
+.flex-container {
+    /* We first create a flex layout context */
+    display: flex;
+
+    /* Then we define the flow direction
+       and if we allow the items to wrap
+     * Remember this is the same as:
+     * flex-direction: row;
+     * flex-wrap: wrap;
+     */
+    flex-flow: row wrap;
+
+    /* Then we define how is distributed the remaining space */
+    justify-content: space-around;
+}
+
+.flex-item {
+    order: 0; /* default is 0 */
+    flex-grow: 0; /* default 0 */
+    flex-shrink: 1; /* default 1 */
 }

@@ -127,7 +127,7 @@
 
 
 #expand {
-    height: 0px;
+    height: 0;
     overflow: hidden;
     transition: height 0.5s;
 }

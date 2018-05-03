@@ -2,3 +2,31 @@
     object-fit: cover;
     height: 250px;
 }
+
+#posts-container nav a {
+    color: white!important;
+}
+
+.post-20180504 {
+    background-color: #2E2E2E!important;
+}
+
+.post-20180504 footer, .post-20180504 nav {
+    background-color: #4B515D;
+}
+
+.post-20180504 .card {
+    border: 2px solid #ff5252;
+    background-color: #2E2E2E!important;
+}
+
+.post-20180504 h4, .post-20180504 h5, .post-20180504 a h4{
+    color: #ff5252;
+}
+
+.post-20180504 .btn {
+    background-color: #ff5252;
+    color: #2E2E2E!important;
+    font-weight: bolder;
+    font-size: 14px;
+}

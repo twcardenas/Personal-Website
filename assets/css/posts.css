@@ -30,3 +30,45 @@
     font-weight: bolder;
     font-size: 14px;
 }
+
+.post-20180504 .fancy {
+    line-height: 0.5;
+    text-align: center;
+    color: #ff5252;
+    font-size: 3em;
+}
+.post-20180504 .fancy span {
+    display: inline-block;
+    position: relative;
+}
+.post-20180504 .fancy span:before,
+.post-20180504 .fancy span:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    background-color: #ff5252;
+    top: 0;
+    width: 250px;
+}
+
+@media (max-width: 650px) {
+    .post-20180504 .fancy span:before,
+    .post-20180504 .fancy span:after {
+        width: 100px;
+    }
+
+}
+.post-20180504 .fancy span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+.post-20180504 .fancy span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+
+
+.post-20180504 .author {
+    font-style: italic;
+}

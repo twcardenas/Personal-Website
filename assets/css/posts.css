@@ -1,6 +1,7 @@
 #posts-container img {
     object-fit: cover;
     height: 250px;
+    width:100%;
 }
 
 #posts-container nav a {
@@ -11,9 +12,19 @@
     background-color: #2E2E2E!important;
 }
 
+.post-20180511 {
+    background-color: rgb(255, 142, 132);
+}
+.post-20180511 footer, .post-20180511 nav {
+    background-color: rgb(150, 209, 218);
+}
+.post-20180511 .card {
+    background-color: rgb(150, 209, 218);
+}
 .post-20180504 footer, .post-20180504 nav {
     background-color: #4B515D;
 }
+
 
 .post-20180504 .card {
     border: 2px solid #ff5252;

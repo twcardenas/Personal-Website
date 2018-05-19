@@ -45,8 +45,6 @@
 
 .post-20180518 a:hover{
     color: #eaff04;
-    text-decoration: underline;
-    text-decoration-color: #eaff04;
 }
 .post-20180518 .section-heading {
     background: #eaff04;
@@ -63,7 +61,7 @@
 }
 @media (max-width: 650px) {
     .post-20180518 .date-heading{
-        font-size: 7em;
+        font-size: 5.5em;
         padding-top: 19%;
     }
 

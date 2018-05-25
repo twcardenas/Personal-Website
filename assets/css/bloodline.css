@@ -1,0 +1,94 @@
+body {
+    background-color: #38003c;
+}
+
+.header {
+    width: 100%;
+    color: #e90052;
+
+    font-family: 'Cinzel', Cursive;
+    font-size: 44px;
+
+    letter-spacing: .5em;
+}
+
+.header span {
+    color: yellow;
+    Font-Family: 'Fauna One', Serif;
+    Font-Size: 24px;
+    letter-spacing: 1.8em;
+    margin-left: -.75em;
+
+}
+.left, .right {
+    /* position: relative; */
+    height: 100%;
+    /* width: 200px; */
+    background: #000;
+    /* float: left; */
+}
+
+.left {
+    background-color: #eaff04;
+}
+
+.right {
+    background-color: #e90052;
+}
+
+.left:after {
+    content: '';
+    line-height: 0;
+    font-size: 0;
+    width: 0;
+    height: 0;
+    border-top: 350px solid #eaff04;
+    border-bottom: 350px solid transparent;
+    border-left: 0px solid transparent;
+    border-right: 50px solid transparent;
+    position: absolute;
+    top: 0;
+    right: -50px;
+}
+
+.right {
+    margin-left: 60px;
+    /* width: 100px; */
+}
+
+.right:before {
+    content: '';
+    line-height: 0;
+    font-size: 0;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-bottom: 350px solid #e90052;
+    border-left: 50px solid transparent;
+    border-right: 0px solid #e90052;
+    position: absolute;
+    top: -50px;
+    left: -50px;
+}
+
+.btn-ins {
+    background-color: #2e5e86!important;
+    color: #fff!important;
+}
+
+.btn-yt {
+    background-color: #ed302f!important;
+    color: #fff!important;
+}
+
+.btn-lg {
+    width: 61.1px;
+    height: 61.1px;
+}
+.social-links button {
+    width: 25%;
+}
+.social-links i {
+    font-size: 2.5em!important;
+    padding: 25px!important;
+}

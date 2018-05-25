@@ -4,10 +4,6 @@
     width:100%;
 }
 
-#posts-container nav a {
-    color: white!important;
-}
-
 .post-20180504 {
     background-color: #2E2E2E!important;
 }
@@ -27,6 +23,21 @@
 .post-20180518 footer, .post-20180518 nav {
     background-color: #e90052;
 }
+.post-20180525 footer, .post-20180525 nav {
+    background-color: #70FCF3;
+}
+.post-20180525 a {
+    color:#2E2950!important;
+}
+.post-20180525 {
+    background: linear-gradient(to top,#2E2950,#F82C73);
+    color: #68D9DA;
+}
+
+.post-20180525 section a {
+    color: white!important;
+}
+
 .post-20180518 {
     font-family: 'Josefin Sans', sans-serif;
     text-align: right;

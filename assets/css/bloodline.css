@@ -1,7 +1,30 @@
 body {
     background-color: #38003c;
+    min-width: 550px;
 }
 
+.bg-header {
+
+    background: linear-gradient(rgba(29, 28, 26, 0.7), rgba(29, 28, 26, 0.7)), url("../img/bloodline-header.jpg") no-repeat center center;
+    background-size: cover;
+    height: 400px;
+    color: #eaff04;
+}
+
+.bg-header h5 {
+    padding-top: 20%;
+}
+
+nav a {
+    color: #eaff04!important;
+}
+.bkg-blue {
+    background-color: #00aced;
+    color: #38003c!important;
+}
+.bkg-blue a {
+    color: #38003c!important;
+}
 .header {
     width: 100%;
     color: #e90052;
@@ -69,6 +92,18 @@ body {
     position: absolute;
     top: -50px;
     left: -50px;
+}
+
+@media (min-width: 550px) and (max-width: 700px) {
+    .right:before, .left:after {
+        all: unset;
+    }
+
+    .right {
+        min-width: 50%;
+        padding-left: 40px;
+        margin-left: 0;
+    }
 }
 
 .btn-ins {

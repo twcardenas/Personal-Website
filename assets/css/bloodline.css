@@ -59,52 +59,6 @@ nav a {
     background-color: #e90052;
 }
 
-.left:after {
-    content: '';
-    line-height: 0;
-    font-size: 0;
-    width: 0;
-    height: 0;
-    border-top: 350px solid #eaff04;
-    border-bottom: 350px solid transparent;
-    border-left: 0px solid transparent;
-    border-right: 50px solid transparent;
-    position: absolute;
-    top: 0;
-    right: -50px;
-}
-
-.right {
-    margin-left: 60px;
-    /* width: 100px; */
-}
-
-.right:before {
-    content: '';
-    line-height: 0;
-    font-size: 0;
-    width: 0;
-    height: 0;
-    border-top: 50px solid transparent;
-    border-bottom: 350px solid #e90052;
-    border-left: 50px solid transparent;
-    border-right: 0px solid #e90052;
-    position: absolute;
-    top: -50px;
-    left: -50px;
-}
-
-@media (min-width: 550px) and (max-width: 700px) {
-    .right:before, .left:after {
-        all: unset;
-    }
-
-    .right {
-        min-width: 50%;
-        padding-left: 40px;
-        margin-left: 0;
-    }
-}
 
 .btn-ins {
     background-color: #2e5e86!important;
